@@ -1,0 +1,9 @@
+* {
+    text-align: center;
+}
+*{
+    font: condensed 100% sans-serif;
+}
+body {
+    background: linear-gradient(black,grey);
+}
