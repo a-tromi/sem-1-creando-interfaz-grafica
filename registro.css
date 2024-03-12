@@ -1,0 +1,110 @@
+* {
+    text-align: center;
+}
+*{
+    font: condensed 100% sans-serif;
+}
+
+/*Estilos para el encabezado*/
+header {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+}
+
+/* Estilos para los elementos del menu */
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo para el menú desplegable */
+header ul ul {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+header ul ul li {
+    display: block;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+/*Estilos para body*/
+body {
+    margin: 0; 
+    padding: 0;
+    background-color: rgb(55, 173, 55); 
+    background-image: url('imagenes/relax.gif');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+/*Estilos para contenedor*/
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    background: linear-gradient(rgb(145, 140, 77), rgb(148, 75, 75));
+    padding: 30px;
+    padding-top: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 750px;
+    margin-right: 750px;
+    margin-top: 220px;
+}
+
+
+/*Estilos para tabla*/
+table {
+    width: 50%;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color:#333;
+    color: #170442;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
