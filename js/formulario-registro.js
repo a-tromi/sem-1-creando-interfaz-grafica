@@ -10,8 +10,16 @@ $(document).ready(function(){
         var fecha_nac = $("#txt_fecha_nac").val();
     
         if (nombre_usuario == "" || username == "" || email == "" ||
-        password == "" || pasword2 == "" || fecha_nac == "" ){
+            password == "" || pasword2 == "" || fecha_nac == "" )
+        {
             alert("Debe ingresar campos obligatorios");
+            return false;
+        }
+
+        if (password != pasword2)
+        {
+            alert("Contraseñas deben ser iguales entre si");
+            return false;
         }
 
     });
