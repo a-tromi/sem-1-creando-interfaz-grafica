@@ -22,6 +22,12 @@ $(document).ready(function(){
             return false;
         }
 
+        if (password.length < 6 || password.length > 18)
+        {
+            alert("Contraseña debe tener una longitud entre 6 y 18 caracteres");
+            return false;
+        }
+
     });
 
 });
