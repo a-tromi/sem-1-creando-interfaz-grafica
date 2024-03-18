@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="loguin.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <title>Duoc NFT Shop</title>
 </head>
 <body background="imagenes/relax.gif">
@@ -14,38 +16,40 @@
     </header>
 
     <div class="container2">
-        <div class="contenido">
-                <h3>Inicio de Sesion</h3>
-                <form id="IngresoForm">
-                    <table>
+        <div class="row">
+            <div class="col-sm">
+                    <h3>Inicio de Sesion</h3>
+                    <form id="IngresoForm">
+                        <table>
 
-                        <tr>
-                            <td><label for="in_usuario">Nombre de usuario:</label></td>
-                            <td><input type="text" id="in_usuario" name="in_usuario" required></td>
-                        </tr>
-                        <tr>
-                        <td><label for="in_password">Contraseña:</label></td>
-                            <td><input type="password" id="in_password" name="in_password" required></td>
-                        </tr>    
-            
-                        <tr>
-                            <td><label for="in_correo">Correo:</label></td>
-                            <td><input type="email" id="in_correo" name="in_correo" required></td>
-                        </tr>
+                            <tr>
+                                <td><label class="l_form" for="in_usuario">Nombre de usuario:</label></td>
+                                <td><input type="text" id="in_usuario" name="in_usuario" required></td>
+                            </tr>
+                            <tr>
+                            <td><label class="l_form" for="in_password">Contraseña:</label></td>
+                                <td><input type="password" id="in_password" name="in_password" required></td>
+                            </tr>    
+                
+                            <tr>
+                                <td><label class="l_form" for="in_correo">Correo:</label></td>
+                                <td><input type="email" id="in_correo" name="in_correo" required></td>
+                            </tr>
 
-                        <tr>
-                            <td><button type="submit" class="btnEnviar">Enviar</button></td>
-                            <td><button type="reset"  class="btnEnviar">Limpiar</button></td>
-                        </tr>
+                            <tr>
+                                <td><button type="submit" class="btnEnviar">Enviar</button></td>
+                                <td><button type="reset"  class="btnEnviar">Limpiar</button></td>
+                            </tr>
 
-                    </table>
-                </form>
-            <div>
-            <label>¿Aun no tienes cuenta?</label>
+                        </table>
+                    </form>
+                <div>
+                <label>¿Aun no tienes cuenta?</label>
+                </div>
+                <div> 
+                    <a href="registro.html">Crear cuenta nueva.</a>
+                </div>     
             </div>
-            <div> 
-                <a href="registro.html">Crear cuenta nueva.</a>
-            </div>     
         </div>
     </div>
     <footer>

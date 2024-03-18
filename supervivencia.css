@@ -19,8 +19,8 @@ body {
     align-content: center;
     align-items: center;
     margin: 20px;
-    width: 400px;
-    height: 400px;
+    width: auto;
+    height: auto;
     background: linear-gradient(rgb(139, 31, 31), rgb(14, 12, 119));
     padding: 20px;
     border-radius: 10px;
@@ -32,16 +32,17 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: auto;
+    width: 80%;
     height: auto;
     background: linear-gradient(black, grey);
-    padding: 30px;
+    padding: 3%;
     padding-top: 70px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 220px;
+    margin-bottom: auto;
 }
 
 /*Estilos para boton comprar*/

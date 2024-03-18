@@ -53,32 +53,69 @@ header ul li:hover ul {
 
 /*Estilos para body*/
 body {
+    display: flex;
+    align-content: center;
+    align-items: center;
     margin: 0; 
     padding: 0;
     background-color: rgb(55, 173, 55); 
     background-image: url('imagenes/relax.gif');
     background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat; 
+    background-position: center; 
 }
 
 /*Estilos para contenedor*/
 .container2 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: auto;
-    height: auto;
+    width: 20%;
+    height: 20%;
     background: linear-gradient(rgb(145, 140, 77), rgb(148, 75, 75));
-    padding: 30px;
+    padding: 3%;
     padding-top: 70px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 750px;
-    margin-right: 750px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 220px;
 }
 
+/*Media query para ajustar estilos en pantallas mas pequeñas */
+@media screen and (max-width: 1350px) {
+    .container2 {
+        width: auto;
+        height: auto;
+        align-items: center;
+        font-display: flex;
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(rgb(145, 140, 77), rgb(148, 75, 75));
+        padding: 3%;
+        padding-top: 70px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 220px; 
+    }
+}
+
+
+/*Estilo para formulario*/
+form{
+    width: auto;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+/*Estilo para letra formulario*/
+.l_form {
+   font-size: 80%;
+   font-weight: bold;
+}
 
 /*Estilos para tabla*/
 table {
