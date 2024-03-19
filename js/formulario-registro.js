@@ -31,6 +31,13 @@ $(document).ready(function(){
             alert("Contraseña debe tener una longitud entre 6 y 18 caracteres");
             return false;
         }
+
+        var passwordPattern = "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$";
+        if (!passwordPattern.test(password)) {
+            alert("La contraseña debe contener al menos un número y una letra en mayúscula y tener entre 6 y 18 caracteres");
+            return false;
+        }
+
         // Validación para que la persona no sea a menor de 13 años
         var anios = calcular_anios(fecha_nac);
         console.log("años obtenidos: " + anios);
@@ -43,23 +50,15 @@ $(document).ready(function(){
     });
 
     function calcular_anios(fecha_nac){
-        // convierte a milisegundos la fecha ingresada en el input "Fecha de Nacimiento" (con formato dd/mm/yyyy)
-        var fecha_nac_milliseconds = new Date(fecha_nac).getTime();
-        // Toma los milisegundos del instante actual en sistema (ahora mismo)
-        var hoy_milliseconds = Date.now();
-        // Calculo la diferencia entre los milisegundos de ahora menos los de la fecha de nacimiento ingresada
-        var dif_anios_milliseconds = (hoy_milliseconds - fecha_nac_milliseconds);
-        // operación matemática: convierto los milisegundos a segundos (divido por 1000), después dichos segundos
-        // los convierto a días (divido por 86400 que son los segundos que tiene un día) y esos días los convierto
-        // a años (dividiendo por 365). El resultado lo dejo como entero, sin decimales ni redondear con la función Math.floor
-        var anios = Math.floor(((dif_anios_milliseconds / 1000) / 86400) / 365);
+        var today = new Date();
+        var birthDate = new Date(fecha_nac);
+        var age = today.getFullYear() - birthDate.getFullYear();
 
-        console.log("fecha_nac_milliseconds: " + fecha_nac_milliseconds);
-        console.log("hoy_milliseconds: " + Date.now());
-        console.log("dif_anios (milliseconds): " + dif_anios_milliseconds );
-        console.log("dif_anios (años): " +  anios);
+        if (today.getMonth() < birthDate.getMonth() || (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
 
-        return anios;
+        return age;
     }
 
 });
