@@ -8,7 +8,7 @@ $(document).ready(function(){
         var email = $("#txt_email").val();
         var password = $("#txt_password").val();
         var pasword2 = $("#txt_password2").val();
-        var fecha_nac = $("#txt_fecha_nac").val();        
+        var fecha_nac = $("#txt_fecha_nac").val();
     
         // Validación campos vacíos
         if (nombre_usuario == "" || username == "" || email == "" ||
@@ -31,7 +31,7 @@ $(document).ready(function(){
             alert("Contraseña debe tener una longitud entre 6 y 18 caracteres");
             return false;
         }
-
+        // Validación para que la persona no sea a menor de 13 años
         var anios = calcular_anios(fecha_nac);
         console.log("años obtenidos: " + anios);
 
